@@ -23,5 +23,18 @@ Output: [1,7]
 class Solution:
     def kthSmallestPrimeFraction(self, arr: List[int], k: int) -> List[int]:
         new_arr = [(x/y, x, y) for x in arr for y in arr if (x!=y and x<y)]
-        new_arr = new_arr.sort(key=lambda x: x[0], x[1], x[2], desc)
-        return new_arr
+        new_arr.sort(key=lambda x: (x[0], x[1], x[2]), reverse=False)
+        ans = [new_arr[k-1][1], new_arr[k-1][2]]
+        return ans
+
+
+"""
+Đánh giá qua giải thuật trên:
+- Ngắn gọn, dễ hiểu, dễ đọc
+- Sử dụng List Comprehension để giải
+- Tuy nhiên độ phức tạp là O(n^2 log(n)) do phải sắp xếp
+
+Cách khác:
+- Priority Queue
+- Binary Search
+"""
