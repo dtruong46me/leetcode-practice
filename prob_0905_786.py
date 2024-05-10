@@ -20,6 +20,8 @@ Input: arr = [1,7], k = 1
 Output: [1,7]
 """
 
+from typing import List
+
 class Solution:
     def kthSmallestPrimeFraction(self, arr: List[int], k: int) -> List[int]:
         new_arr = [(x/y, x, y) for x in arr for y in arr if (x!=y and x<y)]
@@ -35,6 +37,6 @@ class Solution:
 - Tuy nhiên độ phức tạp là O(n^2 log(n)) do phải sắp xếp
 
 Cách khác:
-- Priority Queue
-- Binary Search
+- Priority Queue -> O(k log(n))
+- Binary Search -> O(len(max) log(n))
 """
