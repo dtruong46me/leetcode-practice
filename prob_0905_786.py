@@ -36,6 +36,11 @@ class Solution:
 - Sử dụng List Comprehension để giải
 - Tuy nhiên độ phức tạp là O(n^2 log(n)) do phải sắp xếp
 
+Performance
+- Runtime: 1154ms | Best: 67
+- Memory: 105.76MB | Best: 17.09
+
+
 Cách khác:
 - Priority Queue -> O(k log(n))
 - Binary Search -> O(len(max) log(n))
