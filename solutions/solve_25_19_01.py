@@ -1,5 +1,5 @@
 # solutions/solve_2025_01_19.py
-# Problem link: https://leetcode.com/problems/trapping-rain-water-ii/
+# Problem link: https://leetcode.com/problems/trapping-rain-water-ii/description/
 
 from heapq import heappush, heappop
 from typing import List
