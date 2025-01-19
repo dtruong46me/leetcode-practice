@@ -1,4 +1,4 @@
-name: Python CI
+name: Python CI/CD
 
 on:
   push:
@@ -28,4 +28,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest
+        pytest --maxfail=5 --disable-warnings
