@@ -2,7 +2,7 @@
 import pytest
 from solutions.solve_25_29_01 import Solution
 
-@pytest.mark.parametrize("findMaxFish, expected", [
+@pytest.mark.parametrize("grid, expected", [
     (
         [[0,2,1,0],[4,0,0,3],[1,0,0,4],[0,3,2,0]],
         7
@@ -12,5 +12,5 @@ from solutions.solve_25_29_01 import Solution
         1
     )
 ])
-def test_trapRainWater(findMaxFish, expected):
-    assert Solution().trapRainWater(findMaxFish) == expected
+def test_findMaxFish(grid, expected):
+    assert Solution().findMaxFish(grid) == expected
