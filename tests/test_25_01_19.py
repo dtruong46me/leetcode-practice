@@ -1,6 +1,6 @@
 # tests/test_2025_01_19.py
 import pytest
-from solutions.solve_25_19_01 import Solution
+from solutions.solve_25_01_19 import Solution
 
 @pytest.mark.parametrize("heightMap, expected", [
     (
